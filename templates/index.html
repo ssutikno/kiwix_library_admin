@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiwix Library</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Kiwix Library</h1>
+    <a href="/new">Add New ZIM File</a>
+    <ul>
+        {{range .}}
+        <li>{{.}} <a href="/delete?zimFile={{.}}">Delete</a></li>
+        {{end}}
+    </ul>
+</body>
+</html>
